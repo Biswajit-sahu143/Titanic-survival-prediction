@@ -412,7 +412,7 @@ The project uses the **Random Forest Classifier**.
 
 Random Forest is an ensemble learning algorithm that combines multiple decision trees to make better predictions.
 
-```
+```python
 from sklearn.ensemble import RandomForestClassifier
 
 model = RandomForestClassifier(random_state=42)
@@ -421,19 +421,7 @@ model.fit(X_train, y_train)
 
 y_pred = model.predict(X_test)
 
----
 
-## 📈 Model Evaluation
-
-The model is evaluated using:
-
-Accuracy Score
-Confusion Matrix
-Classification Report
-Feature Importance
-
-Example:
-from sklearn.metrics import accuracy_score
 
 accuracy = accuracy_score(y_test, y_pred)
 
